@@ -9,23 +9,8 @@ form.addEventListener('submit', function (event) {
     reader.onload = function (event) {
         let str = event.target.result;
         let json = JSON.parse(str);
-        // console.log(json)
-        // jsonView.append(str)
         jsonInput.innerHTML = ''
-        const data = Object.keys(json)
-        console.log(data)
-        // const dataAdding=()=>{
-
-        // }
-        data.forEach(key => {
-            jsonInput.append(key)
-            var P = document.createElement("INPUT");
-            P.setAttribute("type", typeof json[key]);
-            P.setAttribute('name', key)
-            P.value = json[key]
-            console.log(json[key])
-            jsonInput.appendChild(P);
-        })
+        addData(json)
         var P = document.createElement("BUTTON");
         P.setAttribute("type", "submit");
         P.innerHTML = 'Submit'
@@ -35,4 +20,29 @@ form.addEventListener('submit', function (event) {
 });
 
 
+function addData(obj) {
+    const data = Object.keys(obj)
+    console.log(data)
 
+    data.forEach(key => {
+        if (typeof obj[key] === "string" || typeof obj[key] === "boolean") {
+            console.log("hii i am in first case");
+            jsonInput.append(key)
+            var P = document.createElement("INPUT");
+            console.log(typeof obj[key])
+            P.setAttribute("type", typeof obj[key]);
+            P.setAttribute('name', key)
+            P.value = obj[key]
+            console.log(obj[key])
+            jsonInput.appendChild(P);
+
+        } else if (typeof obj[key] === "object") {
+            jsonInput.append(key)
+            console.log(key)
+            addData(obj[key])
+            console.log("an object")
+
+        }
+    })
+
+}
