@@ -1,0 +1,68 @@
+{
+  "Name": "Admiral Carpet",
+  "Type": "exhibit",
+  "ID": "100",
+  "Archived": false,
+  "DateCreated": "circa 1450",
+  "Title": "Admiral Carpet",
+  "PlaceMade": "Spain",
+  "PlaceDisplayed": "Living Room",
+  "Artist": "Chanler, Robert Winthrop",
+  "Manufacturer": "",
+  "Material": "Wool",
+  "Weight": "",
+  "Height": "",
+  "Width": "7.8",
+  "Length": "26.10",
+  "MeasurementUnit": "Imperial",
+  "Classification": "Decorative Art",
+  "Description": "The fifteenth-century carpet bears three distinct coats of arms, the first being that of Don Fadrique Enríquez de Mendoza (c. 1390-1473), who held the hereditary post of second admiral of Castile and was grandfather to Ferdinand of Spain. His family heraldry consists of a lion and two three towered castles. The carpet also renders the heraldry of the family of his first wife Marina de Ayala (d. 1453), which comprises of two wolves, and finally the arms of the Order of La Banda, which is a simple diagonal red stripe. The latter represents the most important medieval Spanish Order of Chivalry, founded in 1330 by Alfonso XI of Castile, an ancestor of the Castile family. The major outer border contains Kufic script, which repeats La Allah il’ Allah. The writing is purely decorative.For a detailed description see, Taylor, Roderick. “Spanish Rugs at Vizcaya,” in: Hali 52 (1990), pp. 100-107, copy in object file.",
+  "CurrentValue": "",
+  "InitialCost": "",
+  "Videos": [
+    {
+      "Title": "Weaving Techniques",
+      "Date": "",
+      "LowResolution": "https://www.youtube.com/watch?v=k_o85S-vumc",
+      "HighResolution": "https://www.youtube.com/watch?v=k_o85S-vumc",
+      "Description": "Animation of how carpets were made"
+    }
+  ],
+  "Images": [
+    {
+      "Title": "Front-View",
+      "Date": "",
+      "LowResolution": "https://webarei.s3.eu-west-1.amazonaws.com/FullImages_D+RUG+049-jpg634185840194687500.jpg",
+      "HighResolution": "https://webarei.s3.eu-west-1.amazonaws.com/FullImages_D+RUG+049-jpg634185840194687500.jpg",
+      "Description": ""
+    },
+    {
+      "Title": "Close UP",
+      "Date": "",
+      "LowResolution": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/full-frame-shot-of-textured-carpet-royalty-free-image-629124347-1548358057.jpg?crop=1xw:1xh;center,top&resize=768:*",
+      "HighResolution": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/full-frame-shot-of-textured-carpet-royalty-free-image-629124347-1548358057.jpg?crop=1xw:1xh;center,top&resize=768:*",
+      "Description": ""
+    }
+  ],
+  "3D": [
+    {
+      "Title": "",
+      "Date": "",
+      "LowResolution": "",
+      "HighResolution": "",
+      "Description": ""
+    }
+  ],
+  "Tags": [
+    "Wool",
+    "Living Room",
+    "CARPET",
+    "RUG",
+    "Admiral carpets"
+  ],
+  "RelatedItems": [
+    {
+      "ID": ""
+    }
+  ]
+}

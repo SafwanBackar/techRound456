@@ -1,0 +1,42 @@
+{
+            "ID": "2",
+            "Type": "timeline",
+            "Years": [{
+                    "Title": "A bad Time",
+                    "YearFrom": "1939",
+                    "Description": "",
+                    "YearTo": "1944",
+                    "Date": "",
+                    "Images": [{
+                            "Title": "",
+                            "Description": "",
+                            "HighResolution": "",
+                            "Date": "",
+                            "LowResolution": ""
+                        }
+                    ],
+					"Videos": [{
+                            "Title": "",
+                            "Description": "",
+                            "HighResolution": "",
+                            "Date": "",
+                            "LowResolution": ""
+                        }
+                    ]
+                }, {
+                    "Title": "The Year it all started",
+                    "YearFrom": "",
+                    "Description": "",
+                    "YearTo": "",
+                    "Date": "1909",
+                    "Images": [{
+                            "Title": "",
+                            "Description": "",
+                            "HighResolution": "",
+                            "Date": "",
+                            "LowResolution": ""
+                        }
+                    ]
+                }
+            ]
+        }
