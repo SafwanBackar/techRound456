@@ -9,22 +9,27 @@ form.addEventListener('submit', function (event) {
     reader.onload = function (event) {
         let str = event.target.result;
         let json = JSON.parse(str);
+        // console.log(json)
         // jsonView.append(str)
         jsonInput.innerHTML = ''
-        Object.keys(json).forEach(key => {
+        const data = Object.keys(json)
+        console.log(data)
+        // const dataAdding=()=>{
+
+        // }
+        data.forEach(key => {
             jsonInput.append(key)
-            // jsonInput.append(json[key])
             var P = document.createElement("INPUT");
-            P.setAttribute("type", "text");
-            for (let i = 0; i < key.length; i++) {
-                P.value = 'ksj'
-            }
+            P.setAttribute("type", typeof json[key]);
+            P.setAttribute('name', key)
+            P.value = json[key]
+            console.log(json[key])
             jsonInput.appendChild(P);
-            // console.log(json[key])
-            // if (json[key] === Boolean) {
-            //     console.log(key)
-            // }
         })
+        var P = document.createElement("BUTTON");
+        P.setAttribute("type", "submit");
+        P.innerHTML = 'Submit'
+        jsonInput.appendChild(P);
     };
     reader.readAsText(file.files[0]);
 });
