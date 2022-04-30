@@ -16,12 +16,14 @@ form.addEventListener('submit', function (event) {
         P.innerHTML = 'Submit'
         P.style.backgroundColor = 'green'
         P.style.color = 'white'
-        P.style.borderRadius = '2px'
+        P.style.borderRadius = '7px'
         P.style.display = 'block'
         jsonInput.appendChild(P);
     };
     reader.readAsText(file.files[0]);
 });
+
+
 
 function addData(obj) {
     const data = Object.keys(obj)
