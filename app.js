@@ -19,7 +19,6 @@ form.addEventListener('submit', function (event) {
     reader.readAsText(file.files[0]);
 });
 
-
 function addData(obj) {
     const data = Object.keys(obj)
     console.log(data)
@@ -46,3 +45,36 @@ function addData(obj) {
     })
 
 }
+
+jsonInput.addEventListener('submit', function (event) {
+    let obj = {}
+    event.preventDefault();
+    const form = new FormData(jsonInput);
+    console.log(form);
+    for (let [key, value] of form) {
+        console.log(key)
+        console.log(value);
+        obj[key] = value
+    }
+    const jsonData = JSON.stringify(obj);
+    console.log(jsonData);
+    const jsonToBlob = new Blob([jsonData], { type: 'text/plain' });
+    const sFileName = 'updatedData.json';
+
+
+
+    let newLink = document.createElement('a');
+    newLink.download = sFileName;
+
+    if (window.webkitURL !== null) {
+        newLink.href = window.webkitURL.createObjectURL(jsonToBlob);
+    }
+    else {
+        newLink.href = window.URL.createObjectURL(jsonToBlob);
+        newLink.style.display = 'none';
+        document.body.appendChild(newLink)
+
+    }
+    newLink.click();
+
+})
